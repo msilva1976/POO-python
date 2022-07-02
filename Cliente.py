@@ -7,8 +7,9 @@ class Cliente:
         self.endereço = endereço
 
 
-def imprimirCliente(self,):
-    print('----------------------------------------')
-    print('Nome do cliente: {}'.format(self.nome))
-    print('CPF: {}'.format(self.cpf))
-    print('Endereço: {}'.format(self.endereço))
+    def imprimirCliente(self) -> object:
+        print('----------------------------------------')
+        print('Nome do cliente: {}'.format(self.nome))
+        print('CPF: {}'.format(self.cpf))
+        print('Endereço: {}'.format(self.endereço))
+
