@@ -22,6 +22,9 @@ conta_001.transferenciaValores(conta_002,500)
 conta_002.extrato.extrato_b(conta_002.numeroconta)
 conta_001.gerarSaldo()
 conta_003.extrato.extrato_b(conta_003.numeroconta)
+conta_001.depositar(3000)
+conta_001.extrato.extrato_b(conta_001.numeroconta)
+
 
 
 

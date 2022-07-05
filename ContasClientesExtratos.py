@@ -1,12 +1,11 @@
-import datetime
 from Extrato import Extrato
-
-class Conta:
-    def __init__(self,cliente,numeroconta,saldo):
+import datetime
+class ContaEsp:
+    def __init__(self,cliente,numeroconta,saldo,limite):
         self.cliente = cliente
         self.numeroconta = numeroconta
         self.saldo = saldo 
-        self.data_abertura = datetime.datetime.today()
+        self.data_abertura = datetime
         self.extrato = Extrato()       
 
     def depositar(self,valor):
@@ -22,11 +21,7 @@ class Conta:
 
         return True
 
-    def gerar_extrato(self):
-        print('------------extrato da conta------------') 
-        print("numero: {} ".format(self.numeroconta)) 
-        print('Saldo: R$ {}'.format(self.saldo))
-        
+
     def transferenciaValores(Self,contaDestino,valor):
         if Self.saldo < valor:
             return('Saldo insuficiente')
@@ -39,3 +34,5 @@ class Conta:
         print('Numero: {}'.format(self.numeroconta))
         print('Saldo: {}'.format(self.saldo))
         print('----------------------------------------')
+    
+    
